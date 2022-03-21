@@ -14,6 +14,7 @@ public class ProductDto {
     private double price;
     @Temporal(TemporalType.DATE)
     private Date releaseDate;
+    private String image;
 
     private List<ProductSize> productSizes;
 
@@ -55,5 +56,13 @@ public class ProductDto {
 
     public void setProductSizes(List<ProductSize> productSizes) {
         this.productSizes = productSizes;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 }

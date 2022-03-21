@@ -15,6 +15,7 @@ public class Product {
     private double price;
     @Temporal(TemporalType.DATE)
     private Date releaseDate;
+    private String image;
 
     public UUID getProductId() {
         return productId;
@@ -54,5 +55,13 @@ public class Product {
 
     public void setReleaseDate(Date releaseDate) {
         this.releaseDate = releaseDate;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 }
